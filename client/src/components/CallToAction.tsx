@@ -29,14 +29,19 @@ export default function CallToAction() {
   };
 
   return (
-    <section className="py-20 md:py-32 px-6 bg-card" data-testid="section-cta">
-      <div className="max-w-6xl mx-auto">
+    <section className="relative py-20 md:py-32 px-6 overflow-hidden" data-testid="section-cta">
+      <div className="absolute inset-0 bg-gradient-ember"></div>
+      <div className="absolute inset-0 opacity-10" style={{
+        backgroundImage: 'repeating-linear-gradient(45deg, transparent, transparent 10px, hsl(0 0% 100% / 0.03) 10px, hsl(0 0% 100% / 0.03) 20px)'
+      }}></div>
+      
+      <div className="relative z-10 max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="font-display text-4xl md:text-5xl uppercase tracking-wider text-white neon-text-subtle mb-6">
+            <h2 className="font-display text-4xl md:text-5xl uppercase tracking-wider text-white neon-text mb-8">
               Join the Hunt
             </h2>
-            <p className="text-lg text-foreground/80 mb-8 leading-relaxed">
+            <p className="text-lg text-white/80 mb-8 leading-relaxed">
               Be the first to taste new Trophy Dishes, get exclusive preservation
               guides, and witness the craft before it goes live. If you feel it
               too — trophies belong on plates, not walls.
@@ -66,7 +71,7 @@ export default function CallToAction() {
             </form>
 
             <div className="flex gap-6 items-center">
-              <p className="text-sm text-muted-foreground uppercase tracking-wide">
+              <p className="text-sm text-white/60 uppercase tracking-wide font-display">
                 Follow:
               </p>
               <div className="flex gap-4">
@@ -74,49 +79,51 @@ export default function CallToAction() {
                   href="https://youtube.com/@gutshot"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-foreground/70 hover:glow-ember transition-all duration-300 p-2 rounded-md"
+                  className="text-white/70 hover:glow-ember transition-all duration-300 p-2 rounded-md"
                   data-testid="button-youtube"
                   aria-label="YouTube"
                 >
-                  <Youtube size={24} />
+                  <Youtube size={28} />
                 </a>
                 <a
                   href="https://instagram.com/gutshot"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-foreground/70 hover:glow-teal transition-all duration-300 p-2 rounded-md"
+                  className="text-white/70 hover:glow-teal transition-all duration-300 p-2 rounded-md"
                   data-testid="button-instagram"
                   aria-label="Instagram"
                 >
-                  <Instagram size={24} />
+                  <Instagram size={28} />
                 </a>
                 <a
                   href="https://twitter.com/gutshot"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-foreground/70 hover:glow-yellow transition-all duration-300 p-2 rounded-md"
+                  className="text-white/70 hover:glow-yellow transition-all duration-300 p-2 rounded-md"
                   data-testid="button-twitter"
                   aria-label="Twitter"
                 >
-                  <Twitter size={24} />
+                  <Twitter size={28} />
                 </a>
               </div>
             </div>
           </div>
 
-          <Card className="bg-background/50 backdrop-blur-sm p-8 border-accent/30">
-            <div className="aspect-video bg-muted/20 rounded-md flex items-center justify-center mb-4">
+          <Card className="bg-black/50 backdrop-blur-sm p-8 border-2 border-white/10" style={{
+            boxShadow: '0 8px 32px hsl(0 0% 0% / 0.5)'
+          }}>
+            <div className="aspect-video bg-black/40 rounded-md flex items-center justify-center mb-4 border border-white/5">
               <div className="text-center">
-                <Youtube size={64} className="mx-auto mb-4 text-primary" />
-                <p className="font-display text-xl uppercase tracking-wide text-foreground/70">
+                <Youtube size={64} className="mx-auto mb-4 text-primary opacity-80" />
+                <p className="font-display text-xl uppercase tracking-wide text-white/70">
                   Channel Preview
                 </p>
-                <p className="text-sm text-muted-foreground mt-2">
+                <p className="text-sm text-white/50 mt-2">
                   Coming Soon
                 </p>
               </div>
             </div>
-            <p className="text-sm text-center text-muted-foreground">
+            <p className="text-sm text-center text-white/60">
               Subscribe to witness the craft before it's plated for the world
             </p>
           </Card>

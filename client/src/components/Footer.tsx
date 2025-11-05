@@ -2,20 +2,25 @@ import logoImage from "@assets/Brian_GutShot_Logo_v2_1762283425979.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-background py-16 px-6 border-t border-border">
-      <div className="max-w-7xl mx-auto">
+    <footer className="relative py-16 px-6 border-t border-white/10 overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-dark"></div>
+      <div className="absolute inset-0 opacity-5" style={{
+        backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 50px, hsl(0 0% 100% / 0.02) 50px, hsl(0 0% 100% / 0.02) 100px)'
+      }}></div>
+      
+      <div className="relative z-10 max-w-7xl mx-auto">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           <div>
             <img
               src={logoImage}
               alt="GutShot"
-              className="w-32 opacity-80"
+              className="w-32 opacity-70 hover:opacity-100 transition-opacity"
               data-testid="img-footer-logo"
             />
           </div>
 
           <div>
-            <h3 className="font-display text-xl uppercase tracking-wide text-foreground mb-4">
+            <h3 className="font-display text-xl uppercase tracking-wide text-white/90 mb-4">
               Quick Links
             </h3>
             <ul className="space-y-2">
@@ -25,7 +30,7 @@ export default function Footer() {
                     const section = document.querySelector('[data-testid="section-brand-story"]');
                     section?.scrollIntoView({ behavior: 'smooth' });
                   }}
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors text-left"
+                  className="text-sm text-white/60 hover:glow-ember transition-all text-left"
                   data-testid="link-mission"
                 >
                   Mission
@@ -37,14 +42,14 @@ export default function Footer() {
                     const section = document.querySelector('[data-testid="section-content-strategy"]');
                     section?.scrollIntoView({ behavior: 'smooth' });
                   }}
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors text-left"
+                  className="text-sm text-white/60 hover:glow-ember transition-all text-left"
                   data-testid="link-content"
                 >
                   Pop-Up Events
                 </button>
               </li>
               <li>
-                <span className="text-sm text-muted-foreground/50 cursor-not-allowed">
+                <span className="text-sm text-white/40 cursor-not-allowed">
                   Merch (Coming Soon)
                 </span>
               </li>
@@ -52,15 +57,15 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-display text-xl uppercase tracking-wide text-foreground mb-4">
+            <h3 className="font-display text-xl uppercase tracking-wide text-white/90 mb-4">
               Contact
             </h3>
-            <p className="text-sm text-muted-foreground mb-2">
+            <p className="text-sm text-white/60 mb-2">
               For collaborations and inquiries
             </p>
             <a
               href="mailto:hello@gutshot.com"
-              className="text-sm text-primary hover:text-primary/80 transition-colors"
+              className="text-sm text-primary hover:glow-ember transition-all"
               data-testid="link-email"
             >
               hello@gutshot.com
@@ -68,11 +73,11 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="pt-8 border-t border-border/50 text-center">
-          <p className="text-sm text-muted-foreground mb-2">
+        <div className="pt-8 border-t border-white/10 text-center">
+          <p className="text-sm text-white/50 mb-2">
             © 2024 GutShot — The Digital Kitchen. All rights reserved.
           </p>
-          <p className="font-display text-sm text-primary uppercase tracking-wider">
+          <p className="font-display text-sm glow-ember uppercase tracking-wider">
             Bold Flavors. Wild Instincts.
           </p>
         </div>

@@ -15,19 +15,19 @@ export default function Hero() {
         <img
           src={logoImage}
           alt="GutShot Logo"
-          className="w-64 md:w-80 mx-auto mb-8 logo-neon-blue-pulse"
+          className="w-64 md:w-80 mx-auto mb-12 logo-neon-blue-pulse"
           data-testid="img-logo"
         />
 
-        <h1 className="font-display text-5xl md:text-7xl uppercase tracking-wider text-white neon-text-subtle mb-6">
+        <h1 className="font-display text-5xl md:text-7xl uppercase tracking-wider text-white neon-text mb-8">
           The Digital Kitchen
         </h1>
 
-        <p className="font-display text-2xl md:text-4xl glow-ember mb-4 tracking-wide">
+        <p className="font-display text-2xl md:text-4xl glow-ember mb-6 tracking-wide">
           Trophies aren't on walls — they're on plates.
         </p>
 
-        <p className="font-sans text-lg md:text-xl text-foreground/90 mb-12 max-w-2xl mx-auto">
+        <p className="font-sans text-lg md:text-xl text-white/80 mb-12 max-w-2xl mx-auto leading-relaxed">
           Where preservation meets street chaos. Where artistry replaces the
           burnout of service.
         </p>

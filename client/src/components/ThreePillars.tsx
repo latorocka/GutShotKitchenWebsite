@@ -29,13 +29,18 @@ export default function ThreePillars() {
   ];
 
   return (
-    <section className="py-20 md:py-32 px-6 bg-card" data-testid="section-pillars">
-      <div className="max-w-7xl mx-auto">
+    <section className="relative py-20 md:py-32 px-6 overflow-hidden" data-testid="section-pillars">
+      <div className="absolute inset-0 bg-gradient-teal"></div>
+      <div className="absolute inset-0 opacity-10" style={{
+        backgroundImage: 'radial-gradient(circle at 50% 50%, hsl(180 85% 50% / 0.1) 0%, transparent 50%)'
+      }}></div>
+      
+      <div className="relative z-10 max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="font-display text-4xl md:text-6xl uppercase tracking-wider text-white neon-text-subtle mb-4">
+          <h2 className="font-display text-4xl md:text-6xl uppercase tracking-wider text-white neon-text mb-6">
             Ferment. Infuse. Feast.
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-white/70 max-w-2xl mx-auto">
             Three pillars of the GutShot method — where preservation becomes art
           </p>
         </div>
@@ -44,8 +49,11 @@ export default function ThreePillars() {
           {pillars.map((pillar, index) => (
             <Card
               key={pillar.title}
-              className="group relative overflow-hidden border-2 border-border hover:border-accent transition-all duration-500 hover-neon-glow"
+              className="group relative overflow-hidden border-2 border-white/10 hover:border-accent transition-all duration-500 bg-black/40 backdrop-blur-sm"
               data-testid={`card-pillar-${index}`}
+              style={{
+                boxShadow: '0 4px 24px hsl(0 0% 0% / 0.4)'
+              }}
             >
               <div className="aspect-square overflow-hidden">
                 <img
@@ -57,11 +65,11 @@ export default function ThreePillars() {
               </div>
               <div className="p-6">
                 <h3
-                  className={`font-display text-3xl uppercase tracking-wider mb-3 text-${pillar.color}`}
+                  className={`font-display text-3xl uppercase tracking-wider mb-3 glow-${pillar.color}`}
                 >
                   {pillar.title}
                 </h3>
-                <p className="text-base text-foreground/80 leading-relaxed">
+                <p className="text-base text-white/75 leading-relaxed">
                   {pillar.description}
                 </p>
               </div>

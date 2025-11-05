@@ -49,13 +49,18 @@ export default function ContentStrategy() {
   ];
 
   return (
-    <section className="py-20 md:py-32 px-6 bg-background" data-testid="section-content-strategy">
-      <div className="max-w-7xl mx-auto">
+    <section className="relative py-20 md:py-32 px-6 overflow-hidden" data-testid="section-content-strategy">
+      <div className="absolute inset-0 bg-gradient-dark"></div>
+      <div className="absolute inset-0 opacity-10" style={{
+        backgroundImage: 'repeating-radial-gradient(circle at 20% 30%, hsl(45 100% 55% / 0.08) 0%, transparent 20%)'
+      }}></div>
+      
+      <div className="relative z-10 max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="font-display text-4xl md:text-6xl uppercase tracking-wider text-white neon-text-subtle mb-4">
+          <h2 className="font-display text-4xl md:text-6xl uppercase tracking-wider text-white neon-text mb-6">
             Pop-Up Events
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg text-white/70 max-w-3xl mx-auto">
             Experience GutShot in the wild. Limited seating, bold flavors, wild instincts.
           </p>
         </div>
@@ -70,18 +75,21 @@ export default function ContentStrategy() {
               {upcomingEvents.map((event, index) => (
                 <Card
                   key={index}
-                  className="p-6 hover-neon-glow transition-all duration-300"
+                  className="p-6 transition-all duration-300 bg-black/40 backdrop-blur-sm border-2 border-white/10 hover:border-accent/50"
                   data-testid={`card-event-${index}`}
+                  style={{
+                    boxShadow: '0 4px 20px hsl(0 0% 0% / 0.4)'
+                  }}
                 >
                   <div className="flex items-start justify-between gap-4">
                     <div>
                       <Badge variant="default" className="mb-2">
                         {event.date}
                       </Badge>
-                      <h4 className="font-display text-xl uppercase tracking-wide text-foreground mb-1">
+                      <h4 className="font-display text-xl uppercase tracking-wide text-white mb-1">
                         {event.location}
                       </h4>
-                      <p className="text-sm text-muted-foreground flex items-center gap-2">
+                      <p className="text-sm text-white/60 flex items-center gap-2">
                         <MapPin size={14} />
                         {event.city}
                       </p>
@@ -113,12 +121,15 @@ export default function ContentStrategy() {
               {menuItems.map((item, index) => (
                 <Card
                   key={index}
-                  className="p-6"
+                  className="p-6 bg-black/40 backdrop-blur-sm border-2 border-white/10"
                   data-testid={`card-menu-${index}`}
+                  style={{
+                    boxShadow: '0 4px 20px hsl(0 0% 0% / 0.4)'
+                  }}
                 >
                   <div className="flex justify-between items-start gap-4 mb-2">
-                    <div className="flex items-center gap-2">
-                      <h4 className="font-display text-lg uppercase tracking-wide text-foreground">
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <h4 className="font-display text-lg uppercase tracking-wide text-white">
                         {item.name}
                       </h4>
                       {item.tag && (
@@ -131,7 +142,7 @@ export default function ContentStrategy() {
                       {item.price}
                     </span>
                   </div>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-sm text-white/65 leading-relaxed">
                     {item.description}
                   </p>
                 </Card>
