@@ -1,8 +1,10 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, MapPin, Flame } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
 
 export default function ContentStrategy() {
+  const { toast } = useToast();
   const menuItems = [
     {
       name: "Fire & Ferment Street Noodles",
@@ -87,7 +89,12 @@ export default function ContentStrategy() {
                     <button
                       className="bg-primary hover-elevate active-elevate-2 text-primary-foreground px-4 py-2 rounded-md font-sans text-sm uppercase tracking-wide border border-primary-border"
                       data-testid={`button-reserve-${index}`}
-                      onClick={() => console.log(`Reserve clicked for ${event.location}`)}
+                      onClick={() => {
+                        toast({
+                          title: "Reservation Request",
+                          description: `Interested in ${event.location}? We'll contact you when reservations open.`,
+                        });
+                      }}
                     >
                       Reserve
                     </button>

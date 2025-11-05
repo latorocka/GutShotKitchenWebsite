@@ -3,14 +3,29 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Youtube, Instagram, Twitter } from "lucide-react";
 import { useState } from "react";
+import { useToast } from "@/hooks/use-toast";
 
 export default function CallToAction() {
   const [email, setEmail] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Newsletter signup:", email);
+    if (!email) return;
+
+    setIsSubmitting(true);
+    
+    // Simulate API call
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    
+    toast({
+      title: "Welcome to the hunt! 🔥",
+      description: `We'll send trophy dishes and preservation guides to ${email}`,
+    });
+    
     setEmail("");
+    setIsSubmitting(false);
   };
 
   return (
@@ -43,8 +58,9 @@ export default function CallToAction() {
                   variant="default"
                   className="font-display uppercase tracking-wide"
                   data-testid="button-subscribe"
+                  disabled={isSubmitting}
                 >
-                  Subscribe
+                  {isSubmitting ? "Joining..." : "Subscribe"}
                 </Button>
               </div>
             </form>
@@ -54,30 +70,36 @@ export default function CallToAction() {
                 Follow:
               </p>
               <div className="flex gap-4">
-                <button
+                <a
+                  href="https://youtube.com/@gutshot"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-foreground/70 hover:glow-ember transition-all duration-300 p-2 rounded-md"
                   data-testid="button-youtube"
-                  onClick={() => console.log("YouTube clicked")}
                   aria-label="YouTube"
                 >
                   <Youtube size={24} />
-                </button>
-                <button
+                </a>
+                <a
+                  href="https://instagram.com/gutshot"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-foreground/70 hover:glow-teal transition-all duration-300 p-2 rounded-md"
                   data-testid="button-instagram"
-                  onClick={() => console.log("Instagram clicked")}
                   aria-label="Instagram"
                 >
                   <Instagram size={24} />
-                </button>
-                <button
+                </a>
+                <a
+                  href="https://twitter.com/gutshot"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-foreground/70 hover:glow-yellow transition-all duration-300 p-2 rounded-md"
                   data-testid="button-twitter"
-                  onClick={() => console.log("Twitter clicked")}
                   aria-label="Twitter"
                 >
                   <Twitter size={24} />
-                </button>
+                </a>
               </div>
             </div>
           </div>

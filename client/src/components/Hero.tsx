@@ -44,14 +44,21 @@ export default function Hero() {
           <button
             className="bg-primary hover-neon-glow text-primary-foreground px-8 py-3 rounded-md font-display text-xl uppercase tracking-wide border-2 border-primary-border transition-all duration-300"
             data-testid="button-watch"
-            onClick={() => console.log("Watch the Fire clicked")}
+            onClick={() => {
+              const ctaSection = document.querySelector('[data-testid="section-cta"]');
+              ctaSection?.scrollIntoView({ behavior: 'smooth' });
+            }}
           >
             Watch the Fire
           </button>
           <button
             className="bg-accent hover-neon-glow text-accent-foreground px-8 py-3 rounded-md font-display text-xl uppercase tracking-wide border-2 border-accent backdrop-blur-sm transition-all duration-300"
             data-testid="button-join"
-            onClick={() => console.log("Join the Hunt clicked")}
+            onClick={() => {
+              const emailInput = document.querySelector('[data-testid="input-email"]') as HTMLInputElement;
+              emailInput?.focus();
+              emailInput?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }}
           >
             Join the Hunt
           </button>

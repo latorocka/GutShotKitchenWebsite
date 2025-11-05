@@ -24,31 +24,33 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="#mission"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                <button
+                  onClick={() => {
+                    const section = document.querySelector('[data-testid="section-brand-story"]');
+                    section?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors text-left"
                   data-testid="link-mission"
                 >
                   Mission
-                </a>
+                </button>
               </li>
               <li>
-                <a
-                  href="#content"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                <button
+                  onClick={() => {
+                    const section = document.querySelector('[data-testid="section-content-strategy"]');
+                    section?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors text-left"
                   data-testid="link-content"
                 >
-                  Content Strategy
-                </a>
+                  Pop-Up Events
+                </button>
               </li>
               <li>
-                <a
-                  href="#merch"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                  data-testid="link-merch"
-                >
+                <span className="text-sm text-muted-foreground/50 cursor-not-allowed">
                   Merch (Coming Soon)
-                </a>
+                </span>
               </li>
             </ul>
           </div>
