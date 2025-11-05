@@ -33,17 +33,10 @@ export default function CallToAction() {
     <section className="relative py-20 md:py-32 px-6 overflow-hidden" data-testid="section-cta">
       <div className="absolute inset-0 bg-gradient-ember"></div>
       <div 
-        className="absolute inset-0 bg-cover bg-center opacity-12 blur-sm"
-        style={{ backgroundImage: `url(${neonMarketImage})` }}
+        className="absolute inset-0 bg-cover bg-center opacity-8"
+        style={{ backgroundImage: `url(${neonMarketImage})`, filter: 'blur(20px)' }}
       ></div>
-      <div className="absolute inset-0 lantern-glow opacity-70"></div>
-      <div className="absolute inset-0 street-vendor-texture"></div>
-      <div className="absolute inset-0" style={{
-        backgroundImage: `
-          repeating-linear-gradient(45deg, transparent, transparent 80px, hsl(0 0% 100% / 0.015) 80px, hsl(0 0% 100% / 0.015) 82px),
-          radial-gradient(circle at 10% 90%, hsl(45 100% 55% / 0.06) 0%, transparent 20%)
-        `
-      }}></div>
+      <div className="absolute inset-0 lantern-glow opacity-60"></div>
       
       <div className="relative z-10 max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">

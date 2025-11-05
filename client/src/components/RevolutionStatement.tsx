@@ -9,21 +9,11 @@ export default function RevolutionStatement() {
     >
       <div className="absolute inset-0 bg-gradient-dark"></div>
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-20"
-        style={{ backgroundImage: `url(${backgroundImage})` }}
+        className="absolute inset-0 bg-cover bg-center opacity-15"
+        style={{ backgroundImage: `url(${backgroundImage})`, filter: 'blur(15px)' }}
       ></div>
-      <div 
-        className="absolute inset-0 bg-cover bg-center opacity-10"
-        style={{ backgroundImage: `url(${neonPatternImage})`, backgroundSize: '40%', backgroundRepeat: 'repeat' }}
-      ></div>
-      <div className="absolute inset-0 neon-signs-bg"></div>
-      <div className="absolute inset-0 wet-pavement opacity-50"></div>
-      <div className="absolute inset-0" style={{
-        background: 'radial-gradient(circle at 50% 50%, hsl(15 85% 55% / 0.08) 0%, transparent 70%)'
-      }}></div>
-      <div className="absolute inset-0" style={{
-        backgroundImage: 'repeating-linear-gradient(180deg, transparent, transparent 60px, hsl(0 0% 100% / 0.005) 60px, hsl(0 0% 100% / 0.005) 61px)'
-      }}></div>
+      <div className="absolute inset-0 neon-signs-bg opacity-60"></div>
+      <div className="absolute inset-0 lantern-glow opacity-40"></div>
 
       <div className="relative z-10 max-w-5xl mx-auto text-center">
         <h2 className="font-display text-5xl md:text-7xl uppercase tracking-wider text-white neon-text-strong mb-12 leading-tight">

@@ -33,17 +33,10 @@ export default function ThreePillars() {
     <section className="relative py-20 md:py-32 px-6 overflow-hidden" data-testid="section-pillars">
       <div className="absolute inset-0 bg-gradient-teal"></div>
       <div 
-        className="absolute inset-0 bg-cover bg-center opacity-20 blur-sm"
-        style={{ backgroundImage: `url(${neonMarketImage})` }}
+        className="absolute inset-0 bg-cover bg-center opacity-10"
+        style={{ backgroundImage: `url(${neonMarketImage})`, filter: 'blur(20px)' }}
       ></div>
-      <div className="absolute inset-0 street-vendor-texture"></div>
-      <div className="absolute inset-0 lantern-glow opacity-80"></div>
-      <div className="absolute inset-0" style={{
-        backgroundImage: `
-          repeating-linear-gradient(90deg, transparent, transparent 150px, hsl(180 85% 50% / 0.03) 150px, hsl(180 85% 50% / 0.03) 151px),
-          linear-gradient(180deg, hsl(0 0% 0% / 0.2) 0%, transparent 30%, transparent 70%, hsl(0 0% 0% / 0.2) 100%)
-        `
-      }}></div>
+      <div className="absolute inset-0 lantern-glow opacity-50"></div>
       
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="text-center mb-16">

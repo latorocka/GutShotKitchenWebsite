@@ -79,7 +79,7 @@
   --font-sans: Inter, sans-serif;
   --font-serif: Georgia, serif;
   --font-mono: Menlo, monospace;
-  --font-display: 'Russo One', 'Teko', sans-serif;
+  --font-display: 'Bebas Neue', 'Russo One', sans-serif;
   --radius: .5rem; /* 8px */
   --shadow-2xs: 0px 2px 0px 0px hsl(0 0% 0% / 0.02);
   --shadow-xs: 0px 2px 0px 0px hsl(0 0% 0% / 0.03);
@@ -379,28 +379,28 @@
 
   .neon-text {
     text-shadow: 
+      0 0 1px currentColor,
       0 0 2px currentColor,
-      0 0 4px currentColor,
-      0 0 8px currentColor,
-      0 0 12px currentColor;
-    -webkit-text-stroke: 0.5px currentColor;
+      0 0 5px currentColor,
+      0 0 8px currentColor;
+    letter-spacing: 0.1em;
   }
 
   .neon-text-subtle {
     text-shadow: 
+      0 0 1px currentColor,
       0 0 3px currentColor,
-      0 0 6px currentColor,
-      0 0 9px currentColor;
-    -webkit-text-stroke: 0.3px currentColor;
+      0 0 6px currentColor;
+    letter-spacing: 0.08em;
   }
 
   .neon-text-strong {
     text-shadow: 
-      0 0 3px currentColor,
-      0 0 6px currentColor,
-      0 0 12px currentColor,
-      0 0 18px currentColor;
-    -webkit-text-stroke: 0.5px currentColor;
+      0 0 2px currentColor,
+      0 0 4px currentColor,
+      0 0 8px currentColor,
+      0 0 12px currentColor;
+    letter-spacing: 0.1em;
   }
 
   .neon-border {
@@ -455,33 +455,33 @@
   }
 
   .glow-ember {
-    color: hsl(15 85% 60%);
+    color: hsl(15 90% 65%);
     text-shadow: 
+      0 0 1px hsl(15 85% 60%),
       0 0 3px hsl(15 85% 55%),
       0 0 6px hsl(15 85% 55%),
-      0 0 12px hsl(15 85% 55%),
-      0 0 18px hsl(15 85% 55% / 0.4);
-    -webkit-text-stroke: 0.3px hsl(15 85% 65%);
+      0 0 10px hsl(15 85% 50% / 0.5);
+    letter-spacing: 0.08em;
   }
 
   .glow-teal {
-    color: hsl(180 85% 60%);
+    color: hsl(180 90% 65%);
     text-shadow: 
+      0 0 1px hsl(180 85% 60%),
       0 0 3px hsl(180 85% 50%),
       0 0 6px hsl(180 85% 50%),
-      0 0 12px hsl(180 85% 50%),
-      0 0 18px hsl(180 85% 50% / 0.4);
-    -webkit-text-stroke: 0.3px hsl(180 85% 65%);
+      0 0 10px hsl(180 85% 45% / 0.5);
+    letter-spacing: 0.08em;
   }
 
   .glow-yellow {
-    color: hsl(45 100% 65%);
+    color: hsl(45 100% 70%);
     text-shadow: 
+      0 0 1px hsl(45 100% 65%),
       0 0 3px hsl(45 100% 55%),
       0 0 6px hsl(45 100% 55%),
-      0 0 12px hsl(45 100% 55%),
-      0 0 18px hsl(45 100% 55% / 0.4);
-    -webkit-text-stroke: 0.3px hsl(45 100% 70%);
+      0 0 10px hsl(45 100% 50% / 0.5);
+    letter-spacing: 0.08em;
   }
 
   .bg-gradient-dark {
