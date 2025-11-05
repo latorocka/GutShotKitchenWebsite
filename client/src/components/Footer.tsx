@@ -9,13 +9,9 @@ export default function Footer() {
             <img
               src={logoImage}
               alt="GutShot"
-              className="w-32 mb-4 opacity-80"
+              className="w-32 opacity-80"
               data-testid="img-footer-logo"
             />
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              A chef's rebellion against repetition. Where preservation meets
-              street chaos, and artistry replaces burnout.
-            </p>
           </div>
 
           <div>
