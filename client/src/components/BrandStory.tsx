@@ -4,8 +4,10 @@ export default function BrandStory() {
   return (
     <section className="relative py-20 md:py-32 px-6 overflow-hidden" data-testid="section-brand-story">
       <div className="absolute inset-0 bg-gradient-ember"></div>
-      <div className="absolute inset-0 opacity-10" style={{
-        backgroundImage: 'repeating-linear-gradient(90deg, transparent, transparent 2px, hsl(0 0% 100% / 0.03) 2px, hsl(0 0% 100% / 0.03) 4px)'
+      <div className="absolute inset-0 lantern-glow"></div>
+      <div className="absolute inset-0 wet-pavement opacity-40"></div>
+      <div className="absolute inset-0" style={{
+        backgroundImage: 'repeating-linear-gradient(0deg, transparent 0%, transparent 40px, hsl(15 85% 55% / 0.02) 40px, hsl(15 85% 55% / 0.02) 42px, transparent 42px, transparent 80px)',
       }}></div>
       
       <div className="relative z-10 max-w-4xl mx-auto text-center">

@@ -11,8 +11,13 @@ export default function RevolutionStatement() {
         className="absolute inset-0 bg-cover bg-center opacity-20"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       ></div>
+      <div className="absolute inset-0 neon-signs-bg"></div>
+      <div className="absolute inset-0 wet-pavement opacity-50"></div>
       <div className="absolute inset-0" style={{
         background: 'radial-gradient(circle at 50% 50%, hsl(15 85% 55% / 0.08) 0%, transparent 70%)'
+      }}></div>
+      <div className="absolute inset-0" style={{
+        backgroundImage: 'repeating-linear-gradient(180deg, transparent, transparent 60px, hsl(0 0% 100% / 0.005) 60px, hsl(0 0% 100% / 0.005) 61px)'
       }}></div>
 
       <div className="relative z-10 max-w-5xl mx-auto text-center">

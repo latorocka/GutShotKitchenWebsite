@@ -495,4 +495,33 @@
   .bg-gradient-teal {
     background: linear-gradient(135deg, hsl(0 0% 4%) 0%, hsl(180 15% 6%) 50%, hsl(0 0% 4%) 100%);
   }
+
+  .street-vendor-texture {
+    background-image: 
+      radial-gradient(circle at 15% 20%, hsl(15 85% 55% / 0.05) 0%, transparent 10%),
+      radial-gradient(circle at 85% 30%, hsl(45 100% 55% / 0.04) 0%, transparent 8%),
+      radial-gradient(circle at 50% 60%, hsl(180 85% 50% / 0.03) 0%, transparent 12%),
+      repeating-linear-gradient(90deg, transparent, transparent 100px, hsl(0 0% 100% / 0.01) 100px, hsl(0 0% 100% / 0.01) 102px);
+  }
+
+  .lantern-glow {
+    background-image:
+      radial-gradient(ellipse at 20% 15%, hsl(15 85% 55% / 0.12) 0%, transparent 15%),
+      radial-gradient(ellipse at 80% 25%, hsl(45 100% 55% / 0.10) 0%, transparent 12%),
+      radial-gradient(ellipse at 35% 70%, hsl(15 85% 55% / 0.08) 0%, transparent 10%),
+      radial-gradient(ellipse at 70% 75%, hsl(180 85% 50% / 0.08) 0%, transparent 10%);
+  }
+
+  .wet-pavement {
+    background-image:
+      linear-gradient(180deg, transparent 0%, hsl(0 0% 100% / 0.02) 50%, transparent 100%),
+      repeating-linear-gradient(0deg, transparent, transparent 3px, hsl(0 0% 100% / 0.015) 3px, hsl(0 0% 100% / 0.015) 6px);
+  }
+
+  .neon-signs-bg {
+    background-image:
+      linear-gradient(90deg, transparent 0%, hsl(15 85% 55% / 0.03) 20%, transparent 30%),
+      linear-gradient(90deg, transparent 40%, hsl(180 85% 50% / 0.04) 60%, transparent 70%),
+      linear-gradient(90deg, transparent 75%, hsl(45 100% 55% / 0.03) 85%, transparent 95%);
+  }
 }

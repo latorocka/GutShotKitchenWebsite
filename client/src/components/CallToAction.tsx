@@ -31,8 +31,13 @@ export default function CallToAction() {
   return (
     <section className="relative py-20 md:py-32 px-6 overflow-hidden" data-testid="section-cta">
       <div className="absolute inset-0 bg-gradient-ember"></div>
-      <div className="absolute inset-0 opacity-10" style={{
-        backgroundImage: 'repeating-linear-gradient(45deg, transparent, transparent 10px, hsl(0 0% 100% / 0.03) 10px, hsl(0 0% 100% / 0.03) 20px)'
+      <div className="absolute inset-0 lantern-glow opacity-70"></div>
+      <div className="absolute inset-0 street-vendor-texture"></div>
+      <div className="absolute inset-0" style={{
+        backgroundImage: `
+          repeating-linear-gradient(45deg, transparent, transparent 80px, hsl(0 0% 100% / 0.015) 80px, hsl(0 0% 100% / 0.015) 82px),
+          radial-gradient(circle at 10% 90%, hsl(45 100% 55% / 0.06) 0%, transparent 20%)
+        `
       }}></div>
       
       <div className="relative z-10 max-w-6xl mx-auto">

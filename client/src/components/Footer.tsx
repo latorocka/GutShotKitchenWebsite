@@ -4,8 +4,13 @@ export default function Footer() {
   return (
     <footer className="relative py-16 px-6 border-t border-white/10 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-dark"></div>
-      <div className="absolute inset-0 opacity-5" style={{
-        backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 50px, hsl(0 0% 100% / 0.02) 50px, hsl(0 0% 100% / 0.02) 100px)'
+      <div className="absolute inset-0 street-vendor-texture opacity-60"></div>
+      <div className="absolute inset-0" style={{
+        backgroundImage: `
+          radial-gradient(ellipse at 30% 50%, hsl(15 85% 55% / 0.04) 0%, transparent 40%),
+          radial-gradient(ellipse at 70% 50%, hsl(180 85% 50% / 0.04) 0%, transparent 40%),
+          repeating-linear-gradient(0deg, transparent, transparent 50px, hsl(0 0% 100% / 0.01) 50px, hsl(0 0% 100% / 0.01) 51px)
+        `
       }}></div>
       
       <div className="relative z-10 max-w-7xl mx-auto">
