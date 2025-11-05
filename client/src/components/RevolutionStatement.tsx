@@ -9,14 +9,14 @@ export default function RevolutionStatement() {
     >
       <div className="absolute inset-0 bg-gradient-dark"></div>
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-15"
-        style={{ backgroundImage: `url(${backgroundImage})`, filter: 'blur(15px)' }}
+        className="absolute inset-0 bg-cover bg-center opacity-8"
+        style={{ backgroundImage: `url(${backgroundImage})`, filter: 'blur(6px)' }}
       ></div>
       <div className="absolute inset-0 neon-signs-bg opacity-60"></div>
       <div className="absolute inset-0 lantern-glow opacity-40"></div>
 
       <div className="relative z-10 max-w-5xl mx-auto text-center">
-        <h2 className="font-display text-5xl md:text-7xl uppercase tracking-wider text-white neon-text-strong mb-12 leading-tight">
+        <h2 className="font-display text-6xl md:text-8xl uppercase tracking-wider text-white neon-text-strong mb-12 leading-tight">
           GutShot isn't a restaurant.
           <br />
           <span className="glow-ember">It's a movement.</span>
@@ -30,13 +30,13 @@ export default function RevolutionStatement() {
 
         <div className="flex flex-wrap gap-8 justify-center items-center">
           <div className="text-center">
-            <p className="font-display glow-yellow text-4xl md:text-5xl uppercase tracking-wide">
+            <p className="font-display glow-yellow text-5xl md:text-6xl uppercase tracking-wide">
               Bold Flavors
             </p>
           </div>
-          <span className="text-white/40 text-4xl">•</span>
+          <span className="text-white/40 text-5xl">•</span>
           <div className="text-center">
-            <p className="font-display glow-teal text-4xl md:text-5xl uppercase tracking-wide">
+            <p className="font-display glow-teal text-5xl md:text-6xl uppercase tracking-wide">
               Wild Instincts
             </p>
           </div>

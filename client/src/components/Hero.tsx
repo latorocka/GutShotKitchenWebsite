@@ -19,11 +19,11 @@ export default function Hero() {
           data-testid="img-logo"
         />
 
-        <h1 className="font-display text-5xl md:text-7xl uppercase tracking-wider text-white neon-text mb-8">
+        <h1 className="font-display text-6xl md:text-8xl uppercase tracking-wider text-white neon-text mb-8">
           The Digital Kitchen
         </h1>
 
-        <p className="font-display text-2xl md:text-4xl glow-ember mb-6 tracking-wide">
+        <p className="font-display text-3xl md:text-5xl glow-ember mb-6 tracking-wide">
           Trophies aren't on walls — they're on plates.
         </p>
 

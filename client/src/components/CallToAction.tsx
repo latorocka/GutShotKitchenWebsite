@@ -33,15 +33,15 @@ export default function CallToAction() {
     <section className="relative py-20 md:py-32 px-6 overflow-hidden" data-testid="section-cta">
       <div className="absolute inset-0 bg-gradient-ember"></div>
       <div 
-        className="absolute inset-0 bg-cover bg-center opacity-8"
-        style={{ backgroundImage: `url(${neonMarketImage})`, filter: 'blur(20px)' }}
+        className="absolute inset-0 bg-cover bg-center opacity-5"
+        style={{ backgroundImage: `url(${neonMarketImage})`, filter: 'blur(8px)' }}
       ></div>
       <div className="absolute inset-0 lantern-glow opacity-60"></div>
       
       <div className="relative z-10 max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="font-display text-4xl md:text-5xl uppercase tracking-wider text-white neon-text mb-8">
+            <h2 className="font-display text-5xl md:text-6xl uppercase tracking-wider text-white neon-text mb-8">
               Join the Hunt
             </h2>
             <p className="text-lg text-white/80 mb-8 leading-relaxed">
