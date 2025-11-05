@@ -73,11 +73,8 @@ export default function Footer() {
         </div>
 
         <div className="pt-8 border-t border-white/10 text-center">
-          <p className="text-sm text-white/50 mb-2">
+          <p className="text-sm text-white/50">
             © 2024 GutShot — The Digital Kitchen. All rights reserved.
-          </p>
-          <p className="font-display text-sm glow-ember uppercase tracking-wider">
-            Bold Flavors. Wild Instincts.
           </p>
         </div>
       </div>
