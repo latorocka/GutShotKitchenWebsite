@@ -4,7 +4,7 @@ export default function BrandStory() {
   return (
     <section className="py-20 md:py-32 px-6 bg-background" data-testid="section-brand-story">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="font-display text-4xl md:text-6xl uppercase tracking-wider text-ember mb-8">
+        <h2 className="font-display text-4xl md:text-6xl uppercase tracking-wider glow-ember mb-8">
           A Chef's Rebellion
         </h2>
         <p className="text-lg md:text-xl text-foreground/90 leading-relaxed mb-6">

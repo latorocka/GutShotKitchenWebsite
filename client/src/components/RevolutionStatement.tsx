@@ -12,10 +12,10 @@ export default function RevolutionStatement() {
       ></div>
 
       <div className="relative z-10 max-w-5xl mx-auto text-center">
-        <h2 className="font-display text-5xl md:text-7xl uppercase tracking-wider text-white mb-8 leading-tight">
+        <h2 className="font-display text-5xl md:text-7xl uppercase tracking-wider text-white neon-text-subtle mb-8 leading-tight">
           GutShot isn't a restaurant.
           <br />
-          <span className="text-ember">It's a movement.</span>
+          <span className="glow-ember">It's a movement.</span>
         </h2>
 
         <p className="font-sans text-xl md:text-2xl text-foreground/90 mb-12 max-w-3xl mx-auto leading-relaxed">
@@ -26,13 +26,13 @@ export default function RevolutionStatement() {
 
         <div className="flex flex-wrap gap-6 justify-center items-center">
           <div className="text-center">
-            <p className="font-display text-neon-yellow text-3xl md:text-4xl uppercase tracking-wide">
+            <p className="font-display glow-yellow text-3xl md:text-4xl uppercase tracking-wide">
               Bold Flavors
             </p>
           </div>
           <span className="text-muted-foreground text-3xl">•</span>
           <div className="text-center">
-            <p className="font-display text-neon-teal text-3xl md:text-4xl uppercase tracking-wide">
+            <p className="font-display glow-teal text-3xl md:text-4xl uppercase tracking-wide">
               Wild Instincts
             </p>
           </div>

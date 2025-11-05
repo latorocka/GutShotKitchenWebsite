@@ -50,7 +50,7 @@ export default function ContentStrategy() {
     <section className="py-20 md:py-32 px-6 bg-background" data-testid="section-content-strategy">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="font-display text-4xl md:text-6xl uppercase tracking-wider text-white mb-4">
+          <h2 className="font-display text-4xl md:text-6xl uppercase tracking-wider text-white neon-text-subtle mb-4">
             Pop-Up Events
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
@@ -60,15 +60,15 @@ export default function ContentStrategy() {
 
         <div className="grid md:grid-cols-2 gap-12 mb-16">
           <div>
-            <h3 className="font-display text-3xl uppercase tracking-wide text-ember mb-8 flex items-center gap-3">
-              <Calendar className="text-neon-teal" size={32} />
+            <h3 className="font-display text-3xl uppercase tracking-wide glow-ember mb-8 flex items-center gap-3">
+              <Calendar className="glow-teal" size={32} />
               Upcoming Events
             </h3>
             <div className="space-y-4">
               {upcomingEvents.map((event, index) => (
                 <Card
                   key={index}
-                  className="p-6 hover-elevate"
+                  className="p-6 hover-neon-glow transition-all duration-300"
                   data-testid={`card-event-${index}`}
                 >
                   <div className="flex items-start justify-between gap-4">
@@ -98,8 +98,8 @@ export default function ContentStrategy() {
           </div>
 
           <div>
-            <h3 className="font-display text-3xl uppercase tracking-wide text-ember mb-8 flex items-center gap-3">
-              <Flame className="text-primary" size={32} />
+            <h3 className="font-display text-3xl uppercase tracking-wide glow-ember mb-8 flex items-center gap-3">
+              <Flame className="glow-ember" size={32} />
               Featured Menu
             </h3>
             <div className="space-y-4">
@@ -134,7 +134,7 @@ export default function ContentStrategy() {
         </div>
 
         <div className="text-center">
-          <p className="font-display text-2xl md:text-3xl text-neon-teal uppercase tracking-wide">
+          <p className="font-display text-2xl md:text-3xl glow-teal uppercase tracking-wide">
             Limited servings. Trophy dishes only.
           </p>
         </div>

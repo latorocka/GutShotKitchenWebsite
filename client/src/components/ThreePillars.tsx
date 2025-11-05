@@ -32,7 +32,7 @@ export default function ThreePillars() {
     <section className="py-20 md:py-32 px-6 bg-card" data-testid="section-pillars">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="font-display text-4xl md:text-6xl uppercase tracking-wider text-white mb-4">
+          <h2 className="font-display text-4xl md:text-6xl uppercase tracking-wider text-white neon-text-subtle mb-4">
             Ferment. Infuse. Feast.
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -44,7 +44,7 @@ export default function ThreePillars() {
           {pillars.map((pillar, index) => (
             <Card
               key={pillar.title}
-              className="group relative overflow-hidden border-2 border-border hover:border-accent transition-all duration-300 hover-elevate"
+              className="group relative overflow-hidden border-2 border-border hover:border-accent transition-all duration-500 hover-neon-glow"
               data-testid={`card-pillar-${index}`}
             >
               <div className="aspect-square overflow-hidden">

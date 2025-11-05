@@ -27,11 +27,11 @@ export default function Hero() {
           data-testid="img-logo"
         />
 
-        <h1 className="font-display text-5xl md:text-7xl uppercase tracking-wider text-white mb-6">
+        <h1 className="font-display text-5xl md:text-7xl uppercase tracking-wider text-white neon-text-subtle mb-6">
           The Digital Kitchen
         </h1>
 
-        <p className="font-display text-2xl md:text-4xl text-ember mb-4 tracking-wide">
+        <p className="font-display text-2xl md:text-4xl glow-ember mb-4 tracking-wide">
           Trophies aren't on walls — they're on plates.
         </p>
 
@@ -42,14 +42,14 @@ export default function Hero() {
 
         <div className="flex flex-wrap gap-4 justify-center mb-16">
           <button
-            className="bg-primary hover-elevate active-elevate-2 text-primary-foreground px-8 py-3 rounded-md font-display text-xl uppercase tracking-wide border border-primary-border transition-transform"
+            className="bg-primary hover-neon-glow text-primary-foreground px-8 py-3 rounded-md font-display text-xl uppercase tracking-wide border-2 border-primary-border transition-all duration-300"
             data-testid="button-watch"
             onClick={() => console.log("Watch the Fire clicked")}
           >
             Watch the Fire
           </button>
           <button
-            className="bg-accent hover-elevate active-elevate-2 text-accent-foreground px-8 py-3 rounded-md font-display text-xl uppercase tracking-wide border border-accent backdrop-blur-sm transition-transform"
+            className="bg-accent hover-neon-glow text-accent-foreground px-8 py-3 rounded-md font-display text-xl uppercase tracking-wide border-2 border-accent backdrop-blur-sm transition-all duration-300"
             data-testid="button-join"
             onClick={() => console.log("Join the Hunt clicked")}
           >

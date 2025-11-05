@@ -18,7 +18,7 @@ export default function CallToAction() {
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="font-display text-4xl md:text-5xl uppercase tracking-wider text-white mb-6">
+            <h2 className="font-display text-4xl md:text-5xl uppercase tracking-wider text-white neon-text-subtle mb-6">
               Join the Hunt
             </h2>
             <p className="text-lg text-foreground/80 mb-8 leading-relaxed">
@@ -55,7 +55,7 @@ export default function CallToAction() {
               </p>
               <div className="flex gap-4">
                 <button
-                  className="text-foreground/70 hover:text-primary transition-colors hover-elevate p-2 rounded-md"
+                  className="text-foreground/70 hover:glow-ember transition-all duration-300 p-2 rounded-md"
                   data-testid="button-youtube"
                   onClick={() => console.log("YouTube clicked")}
                   aria-label="YouTube"
@@ -63,7 +63,7 @@ export default function CallToAction() {
                   <Youtube size={24} />
                 </button>
                 <button
-                  className="text-foreground/70 hover:text-primary transition-colors hover-elevate p-2 rounded-md"
+                  className="text-foreground/70 hover:glow-teal transition-all duration-300 p-2 rounded-md"
                   data-testid="button-instagram"
                   onClick={() => console.log("Instagram clicked")}
                   aria-label="Instagram"
@@ -71,7 +71,7 @@ export default function CallToAction() {
                   <Instagram size={24} />
                 </button>
                 <button
-                  className="text-foreground/70 hover:text-primary transition-colors hover-elevate p-2 rounded-md"
+                  className="text-foreground/70 hover:glow-yellow transition-all duration-300 p-2 rounded-md"
                   data-testid="button-twitter"
                   onClick={() => console.log("Twitter clicked")}
                   aria-label="Twitter"

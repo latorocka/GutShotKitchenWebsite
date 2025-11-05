@@ -79,7 +79,7 @@
   --font-sans: Inter, sans-serif;
   --font-serif: Georgia, serif;
   --font-mono: Menlo, monospace;
-  --font-display: 'Bebas Neue', sans-serif;
+  --font-display: 'Russo One', 'Teko', sans-serif;
   --radius: .5rem; /* 8px */
   --shadow-2xs: 0px 2px 0px 0px hsl(0 0% 0% / 0.02);
   --shadow-xs: 0px 2px 0px 0px hsl(0 0% 0% / 0.03);
@@ -336,12 +336,69 @@
     }
   }
 
+  @keyframes neon-flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      text-shadow: 
+        0 0 4px currentColor,
+        0 0 11px currentColor,
+        0 0 19px currentColor,
+        0 0 40px currentColor,
+        0 0 80px currentColor;
+      opacity: 1;
+    }
+    20%, 24%, 55% {
+      text-shadow: none;
+      opacity: 0.8;
+    }
+  }
+
   .neon-glow {
     filter: drop-shadow(0 0 8px currentColor) drop-shadow(0 0 16px currentColor);
   }
 
   .neon-pulse {
     animation: neon-pulse 3s ease-in-out infinite;
+  }
+
+  .neon-text {
+    text-shadow: 
+      0 0 7px currentColor,
+      0 0 10px currentColor,
+      0 0 21px currentColor,
+      0 0 42px currentColor,
+      0 0 82px currentColor,
+      0 0 92px currentColor,
+      0 0 102px currentColor,
+      0 0 151px currentColor;
+  }
+
+  .neon-text-subtle {
+    text-shadow: 
+      0 0 4px currentColor,
+      0 0 8px currentColor,
+      0 0 12px currentColor;
+  }
+
+  .neon-border {
+    box-shadow: 
+      0 0 5px currentColor,
+      0 0 10px currentColor,
+      0 0 20px currentColor,
+      inset 0 0 5px currentColor;
+  }
+
+  .hover-neon-glow {
+    transition: all 0.3s ease;
+  }
+
+  .hover-neon-glow:hover {
+    box-shadow: 
+      0 0 10px currentColor,
+      0 0 20px currentColor,
+      0 0 30px currentColor,
+      0 0 40px currentColor,
+      inset 0 0 10px currentColor;
+    transform: translateY(-2px);
   }
 
   .text-neon-teal {
@@ -354,5 +411,29 @@
 
   .text-ember {
     color: hsl(15 85% 55%);
+  }
+
+  .glow-ember {
+    color: hsl(15 85% 55%);
+    text-shadow: 
+      0 0 7px hsl(15 85% 55%),
+      0 0 14px hsl(15 85% 55%),
+      0 0 21px hsl(15 85% 55%);
+  }
+
+  .glow-teal {
+    color: hsl(180 85% 50%);
+    text-shadow: 
+      0 0 7px hsl(180 85% 50%),
+      0 0 14px hsl(180 85% 50%),
+      0 0 21px hsl(180 85% 50%);
+  }
+
+  .glow-yellow {
+    color: hsl(45 100% 55%);
+    text-shadow: 
+      0 0 7px hsl(45 100% 55%),
+      0 0 14px hsl(45 100% 55%),
+      0 0 21px hsl(45 100% 55%);
   }
 }
