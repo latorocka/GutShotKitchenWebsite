@@ -2,6 +2,7 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, MapPin, Flame } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import streetFoodImage from "@assets/generated_images/Street_food_cooking_fire_b7e6ecd5.png";
 
 export default function ContentStrategy() {
   const { toast } = useToast();
@@ -51,6 +52,10 @@ export default function ContentStrategy() {
   return (
     <section className="relative py-20 md:py-32 px-6 overflow-hidden" data-testid="section-content-strategy">
       <div className="absolute inset-0 bg-gradient-dark"></div>
+      <div 
+        className="absolute inset-0 bg-cover bg-center opacity-18"
+        style={{ backgroundImage: `url(${streetFoodImage})`, filter: 'blur(8px)' }}
+      ></div>
       <div className="absolute inset-0 neon-signs-bg opacity-90"></div>
       <div className="absolute inset-0 lantern-glow opacity-60"></div>
       <div className="absolute inset-0 wet-pavement opacity-30"></div>

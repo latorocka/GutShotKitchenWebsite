@@ -1,4 +1,5 @@
 import backgroundImage from "@assets/generated_images/Dark_smoke_texture_background_e34b6058.png";
+import neonPatternImage from "@assets/generated_images/Neon_signs_abstract_pattern_fe87a1ac.png";
 
 export default function RevolutionStatement() {
   return (
@@ -10,6 +11,10 @@ export default function RevolutionStatement() {
       <div
         className="absolute inset-0 bg-cover bg-center opacity-20"
         style={{ backgroundImage: `url(${backgroundImage})` }}
+      ></div>
+      <div 
+        className="absolute inset-0 bg-cover bg-center opacity-10"
+        style={{ backgroundImage: `url(${neonPatternImage})`, backgroundSize: '40%', backgroundRepeat: 'repeat' }}
       ></div>
       <div className="absolute inset-0 neon-signs-bg"></div>
       <div className="absolute inset-0 wet-pavement opacity-50"></div>

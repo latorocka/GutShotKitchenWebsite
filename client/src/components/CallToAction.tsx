@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Youtube, Instagram, Twitter } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import neonMarketImage from "@assets/generated_images/Neon_signs_night_market_6f25274b.png";
 
 export default function CallToAction() {
   const [email, setEmail] = useState("");
@@ -31,6 +32,10 @@ export default function CallToAction() {
   return (
     <section className="relative py-20 md:py-32 px-6 overflow-hidden" data-testid="section-cta">
       <div className="absolute inset-0 bg-gradient-ember"></div>
+      <div 
+        className="absolute inset-0 bg-cover bg-center opacity-12 blur-sm"
+        style={{ backgroundImage: `url(${neonMarketImage})` }}
+      ></div>
       <div className="absolute inset-0 lantern-glow opacity-70"></div>
       <div className="absolute inset-0 street-vendor-texture"></div>
       <div className="absolute inset-0" style={{

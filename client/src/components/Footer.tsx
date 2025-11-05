@@ -1,9 +1,14 @@
 import logoImage from "@assets/Brian_GutShot_Logo_v2_1762283425979.png";
+import neonPatternImage from "@assets/generated_images/Neon_signs_abstract_pattern_fe87a1ac.png";
 
 export default function Footer() {
   return (
     <footer className="relative py-16 px-6 border-t border-white/10 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-dark"></div>
+      <div 
+        className="absolute inset-0 bg-cover bg-center opacity-5"
+        style={{ backgroundImage: `url(${neonPatternImage})`, backgroundSize: '30%', backgroundRepeat: 'repeat' }}
+      ></div>
       <div className="absolute inset-0 street-vendor-texture opacity-60"></div>
       <div className="absolute inset-0" style={{
         backgroundImage: `
