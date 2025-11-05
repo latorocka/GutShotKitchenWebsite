@@ -392,12 +392,29 @@
 
   .hover-neon-glow:hover {
     box-shadow: 
+      0 0 5px currentColor,
+      0 0 10px currentColor,
+      0 0 15px currentColor;
+    transform: translateY(-1px);
+  }
+
+  .neon-sign-button {
+    background: transparent;
+    border: 2px solid currentColor;
+    position: relative;
+    overflow: visible;
+    transition: all 0.3s ease;
+  }
+
+  .neon-sign-button:hover {
+    text-shadow: 
+      0 0 5px currentColor,
+      0 0 10px currentColor;
+    box-shadow: 
+      0 0 5px currentColor,
       0 0 10px currentColor,
       0 0 20px currentColor,
-      0 0 30px currentColor,
-      0 0 40px currentColor,
-      inset 0 0 10px currentColor;
-    transform: translateY(-2px);
+      inset 0 0 5px currentColor;
   }
 
   .text-neon-teal {
