@@ -15,9 +15,9 @@ export default function Hero() {
         <img
           src={logoImage}
           alt="GutShot Logo"
-          className="w-64 md:w-80 mx-auto mb-8"
+          className="w-64 md:w-80 mx-auto mb-8 neon-pulse"
           style={{
-            filter: 'drop-shadow(0 0 8px hsl(200 100% 60%)) drop-shadow(0 0 16px hsl(200 100% 60%)) drop-shadow(0 0 24px hsl(200 100% 60% / 0.5))'
+            filter: 'drop-shadow(0 0 8px hsl(190 100% 70%)) drop-shadow(0 0 16px hsl(190 100% 70%)) drop-shadow(0 0 24px hsl(190 100% 70% / 0.5))'
           }}
           data-testid="img-logo"
         />
