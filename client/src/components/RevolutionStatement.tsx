@@ -16,10 +16,10 @@ export default function RevolutionStatement() {
       <div className="absolute inset-0 lantern-glow opacity-40"></div>
 
       <div className="relative z-10 max-w-5xl mx-auto text-center">
-        <h2 className="font-display text-6xl md:text-8xl uppercase tracking-wider text-white neon-text-strong mb-12 leading-tight">
+        <h2 className="font-display text-6xl md:text-8xl uppercase tracking-wider glow-ember mb-12 leading-tight">
           GutShot isn't a restaurant.
           <br />
-          <span className="glow-ember">It's a movement.</span>
+          It's a movement.
         </h2>
 
         <p className="font-sans text-xl md:text-2xl text-white/80 mb-16 max-w-3xl mx-auto leading-relaxed">
