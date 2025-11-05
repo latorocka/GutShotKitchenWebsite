@@ -379,28 +379,28 @@
 
   .neon-text {
     text-shadow: 
-      0 0 5px currentColor,
-      0 0 10px currentColor,
-      0 0 15px currentColor,
-      0 0 20px currentColor,
-      0 0 30px currentColor,
-      0 0 40px currentColor;
+      0 0 2px currentColor,
+      0 0 4px currentColor,
+      0 0 8px currentColor,
+      0 0 12px currentColor;
+    -webkit-text-stroke: 0.5px currentColor;
   }
 
   .neon-text-subtle {
     text-shadow: 
-      0 0 5px currentColor,
-      0 0 10px currentColor,
-      0 0 15px currentColor;
+      0 0 3px currentColor,
+      0 0 6px currentColor,
+      0 0 9px currentColor;
+    -webkit-text-stroke: 0.3px currentColor;
   }
 
   .neon-text-strong {
     text-shadow: 
-      0 0 7px currentColor,
-      0 0 10px currentColor,
-      0 0 21px currentColor,
-      0 0 42px currentColor,
-      0 0 82px currentColor;
+      0 0 3px currentColor,
+      0 0 6px currentColor,
+      0 0 12px currentColor,
+      0 0 18px currentColor;
+    -webkit-text-stroke: 0.5px currentColor;
   }
 
   .neon-border {
@@ -457,28 +457,31 @@
   .glow-ember {
     color: hsl(15 85% 60%);
     text-shadow: 
-      0 0 7px hsl(15 85% 55%),
-      0 0 10px hsl(15 85% 55%),
-      0 0 21px hsl(15 85% 55%),
-      0 0 42px hsl(15 85% 55% / 0.5);
+      0 0 3px hsl(15 85% 55%),
+      0 0 6px hsl(15 85% 55%),
+      0 0 12px hsl(15 85% 55%),
+      0 0 18px hsl(15 85% 55% / 0.4);
+    -webkit-text-stroke: 0.3px hsl(15 85% 65%);
   }
 
   .glow-teal {
     color: hsl(180 85% 60%);
     text-shadow: 
-      0 0 7px hsl(180 85% 50%),
-      0 0 10px hsl(180 85% 50%),
-      0 0 21px hsl(180 85% 50%),
-      0 0 42px hsl(180 85% 50% / 0.5);
+      0 0 3px hsl(180 85% 50%),
+      0 0 6px hsl(180 85% 50%),
+      0 0 12px hsl(180 85% 50%),
+      0 0 18px hsl(180 85% 50% / 0.4);
+    -webkit-text-stroke: 0.3px hsl(180 85% 65%);
   }
 
   .glow-yellow {
     color: hsl(45 100% 65%);
     text-shadow: 
-      0 0 7px hsl(45 100% 55%),
-      0 0 10px hsl(45 100% 55%),
-      0 0 21px hsl(45 100% 55%),
-      0 0 42px hsl(45 100% 55% / 0.5);
+      0 0 3px hsl(45 100% 55%),
+      0 0 6px hsl(45 100% 55%),
+      0 0 12px hsl(45 100% 55%),
+      0 0 18px hsl(45 100% 55% / 0.4);
+    -webkit-text-stroke: 0.3px hsl(45 100% 70%);
   }
 
   .bg-gradient-dark {
