@@ -4,7 +4,7 @@ import path from "path";
 
 export default defineConfig({
   plugins: [react()],
-  base: '/gutshot-website/', // Replace with your GitHub repo name
+  base: '/GutShotKitchenWebsite/',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "client", "src"),
