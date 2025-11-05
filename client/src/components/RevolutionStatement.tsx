@@ -9,10 +9,10 @@ export default function RevolutionStatement() {
     >
       <div className="absolute inset-0 bg-gradient-dark"></div>
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-8"
-        style={{ backgroundImage: `url(${backgroundImage})`, filter: 'blur(6px)' }}
+        className="absolute inset-0 bg-cover bg-center opacity-[0.03]"
+        style={{ backgroundImage: `url(${backgroundImage})`, filter: 'blur(10px)' }}
       ></div>
-      <div className="absolute inset-0 neon-signs-bg opacity-60"></div>
+      <div className="absolute inset-0 neon-signs-bg opacity-50"></div>
       <div className="absolute inset-0 lantern-glow opacity-40"></div>
 
       <div className="relative z-10 max-w-5xl mx-auto text-center">

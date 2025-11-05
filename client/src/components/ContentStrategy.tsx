@@ -53,10 +53,10 @@ export default function ContentStrategy() {
     <section className="relative py-20 md:py-32 px-6 overflow-hidden" data-testid="section-content-strategy">
       <div className="absolute inset-0 bg-gradient-dark"></div>
       <div 
-        className="absolute inset-0 bg-cover bg-center opacity-6"
-        style={{ backgroundImage: `url(${streetFoodImage})`, filter: 'blur(8px)' }}
+        className="absolute inset-0 bg-cover bg-center opacity-[0.03]"
+        style={{ backgroundImage: `url(${streetFoodImage})`, filter: 'blur(10px)' }}
       ></div>
-      <div className="absolute inset-0 neon-signs-bg opacity-60"></div>
+      <div className="absolute inset-0 neon-signs-bg opacity-50"></div>
       <div className="absolute inset-0 lantern-glow opacity-50"></div>
       
       <div className="relative z-10 max-w-7xl mx-auto">

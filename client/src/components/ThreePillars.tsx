@@ -33,8 +33,8 @@ export default function ThreePillars() {
     <section className="relative py-20 md:py-32 px-6 overflow-hidden" data-testid="section-pillars">
       <div className="absolute inset-0 bg-gradient-teal"></div>
       <div 
-        className="absolute inset-0 bg-cover bg-center opacity-6"
-        style={{ backgroundImage: `url(${neonMarketImage})`, filter: 'blur(8px)' }}
+        className="absolute inset-0 bg-cover bg-center opacity-[0.03]"
+        style={{ backgroundImage: `url(${neonMarketImage})`, filter: 'blur(10px)' }}
       ></div>
       <div className="absolute inset-0 lantern-glow opacity-50"></div>
       
