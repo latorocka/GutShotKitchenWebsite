@@ -378,7 +378,8 @@
   }
 
   .neon-text {
-    color: transparent;
+    color: currentColor;
+    -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 2px currentColor;
     text-stroke: 2px currentColor;
     filter: 
@@ -389,7 +390,8 @@
   }
 
   .neon-text-subtle {
-    color: transparent;
+    color: currentColor;
+    -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1.5px currentColor;
     text-stroke: 1.5px currentColor;
     filter: 
@@ -400,7 +402,8 @@
   }
 
   .neon-text-strong {
-    color: transparent;
+    color: currentColor;
+    -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 2.5px currentColor;
     text-stroke: 2.5px currentColor;
     filter: 
@@ -463,7 +466,8 @@
   }
 
   .glow-ember {
-    color: transparent;
+    color: hsl(15 90% 65%);
+    -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1.5px hsl(15 90% 65%);
     text-stroke: 1.5px hsl(15 90% 65%);
     filter: 
@@ -475,7 +479,8 @@
   }
 
   .glow-teal {
-    color: transparent;
+    color: hsl(180 90% 65%);
+    -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1.5px hsl(180 90% 65%);
     text-stroke: 1.5px hsl(180 90% 65%);
     filter: 
@@ -487,7 +492,8 @@
   }
 
   .glow-yellow {
-    color: transparent;
+    color: hsl(45 100% 75%);
+    -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1.5px hsl(45 100% 75%);
     text-stroke: 1.5px hsl(45 100% 75%);
     filter: 
