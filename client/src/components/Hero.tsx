@@ -1,15 +1,7 @@
 import logoImage from "@assets/Brian_GutShot_Logo_v2_1762283425979.png";
 import backgroundImage from "@assets/generated_images/Hero_smoke_fire_background_8c0ab637.png";
-import { ChevronDown } from "lucide-react";
 
 export default function Hero() {
-  const scrollToNext = () => {
-    window.scrollTo({
-      top: window.innerHeight,
-      behavior: "smooth",
-    });
-  };
-
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div
@@ -23,7 +15,10 @@ export default function Hero() {
         <img
           src={logoImage}
           alt="GutShot Logo"
-          className="w-64 md:w-80 mx-auto mb-8 neon-pulse"
+          className="w-64 md:w-80 mx-auto mb-8"
+          style={{
+            filter: 'drop-shadow(0 0 8px hsl(200 100% 60%)) drop-shadow(0 0 16px hsl(200 100% 60%)) drop-shadow(0 0 24px hsl(200 100% 60% / 0.5))'
+          }}
           data-testid="img-logo"
         />
 
@@ -70,15 +65,6 @@ export default function Hero() {
           </button>
         </div>
       </div>
-
-      <button
-        onClick={scrollToNext}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-foreground/70 hover:text-foreground transition-colors animate-bounce"
-        data-testid="button-scroll"
-        aria-label="Scroll down"
-      >
-        <ChevronDown size={40} />
-      </button>
     </section>
   );
 }
