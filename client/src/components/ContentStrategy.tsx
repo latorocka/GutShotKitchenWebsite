@@ -65,7 +65,7 @@ export default function ContentStrategy() {
             Pop-Up Events
           </h2>
           <p className="text-lg text-white/70 max-w-3xl mx-auto">
-            Experience GutShot in the wild. Limited seating, bold flavors, wild instincts.
+            Experience GutShot in the wild.
           </p>
         </div>
 
