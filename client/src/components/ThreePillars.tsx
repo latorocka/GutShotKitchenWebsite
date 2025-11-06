@@ -45,8 +45,8 @@ export default function ThreePillars() {
             <span className="glow-yellow">Infuse.</span>{" "}
             <span className="glow-ember">Feast.</span>
           </h2>
-          <p className="text-lg text-white/70 max-w-2xl mx-auto">
-            Three pillars of the GutShot method — where preservation becomes art
+          <p className="font-display text-2xl md:text-3xl max-w-2xl mx-auto glow-teal">
+            where preservation becomes art
           </p>
         </div>
 
