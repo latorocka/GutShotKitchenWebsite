@@ -48,9 +48,16 @@ export default function Footer() {
                 </button>
               </li>
               <li>
-                <span className="text-sm text-white/40 cursor-not-allowed">
-                  Merch (Coming Soon)
-                </span>
+                <button
+                  onClick={() => {
+                    const section = document.querySelector('[data-testid="section-merch"]');
+                    section?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className="text-sm text-white/60 hover:glow-ember transition-all text-left"
+                  data-testid="link-merch"
+                >
+                  Merch
+                </button>
               </li>
             </ul>
           </div>
