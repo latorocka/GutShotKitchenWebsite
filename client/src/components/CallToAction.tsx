@@ -92,7 +92,7 @@ export default function CallToAction() {
                   href="https://instagram.com/gutshot"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white/70 hover:glow-teal transition-all duration-300 p-2 rounded-md"
+                  className="text-white/70 hover:glow-yellow transition-all duration-300 p-2 rounded-md"
                   data-testid="button-instagram"
                   aria-label="Instagram"
                 >
@@ -102,7 +102,7 @@ export default function CallToAction() {
                   href="https://twitter.com/gutshot"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white/70 hover:glow-yellow transition-all duration-300 p-2 rounded-md"
+                  className="text-white/70 hover:glow-teal transition-all duration-300 p-2 rounded-md"
                   data-testid="button-twitter"
                   aria-label="Twitter"
                 >
