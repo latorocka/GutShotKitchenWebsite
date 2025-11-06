@@ -24,7 +24,7 @@ export default function ThreePillars() {
       title: "FEAST",
       image: smokeImage,
       description:
-        "The payoff. Smoking, curing, and the primal heat that turns craft into cinematic trophy dishes.",
+        "Smoking, curing, and the primal heat that turns craft into a trophy.",
       color: "ember",
     },
   ];
