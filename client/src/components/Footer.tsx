@@ -13,7 +13,17 @@ export default function Footer() {
             <img
               src={logoImage}
               alt="GutShot"
-              className="w-32 opacity-70 hover:opacity-100 transition-opacity"
+              className="w-32 opacity-70 hover:opacity-100 transition-all duration-300"
+              style={{
+                filter: 'none',
+                transition: 'all 0.3s ease'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.filter = 'drop-shadow(0 0 8px hsl(210 100% 60%)) drop-shadow(0 0 16px hsl(210 100% 60%))';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.filter = 'none';
+              }}
               data-testid="img-footer-logo"
             />
           </div>
