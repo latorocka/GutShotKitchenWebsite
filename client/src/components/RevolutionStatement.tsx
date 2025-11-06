@@ -34,7 +34,7 @@ export default function RevolutionStatement() {
               Bold Flavors
             </p>
           </div>
-          <span className="text-white/40 text-5xl">•</span>
+          <span className="text-white text-5xl neon-text">•</span>
           <div className="text-center">
             <p className="font-display glow-teal text-5xl md:text-6xl uppercase tracking-wide">
               Wild Instincts
