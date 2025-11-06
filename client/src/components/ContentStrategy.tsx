@@ -64,7 +64,7 @@ export default function ContentStrategy() {
           <h2 className="font-display text-5xl md:text-7xl uppercase tracking-wider text-white neon-text mb-6">
             Pop-Up Events
           </h2>
-          <p className="font-display text-2xl md:text-3xl text-white neon-text-subtle max-w-3xl mx-auto">
+          <p className="font-display text-2xl md:text-3xl glow-yellow max-w-3xl mx-auto">
             Experience GutShot in the wild.
           </p>
         </div>
