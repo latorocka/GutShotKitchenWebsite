@@ -91,7 +91,7 @@ export default function Footer() {
 
         <div className="pt-8 border-t border-white/10 text-center">
           <p className="text-sm text-white/50">
-            © 2024 GutShot — The Digital Kitchen. All rights reserved.
+            © 2025 GutShot — The Digital Kitchen. All rights reserved.
           </p>
         </div>
       </div>
