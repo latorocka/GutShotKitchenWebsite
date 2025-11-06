@@ -70,7 +70,7 @@ export default function ThreePillars() {
               </div>
               <div className="p-6">
                 <h3
-                  className={`font-display text-3xl uppercase tracking-wider mb-3 glow-${pillar.color}`}
+                  className="font-display text-3xl uppercase tracking-wider mb-3 text-white"
                 >
                   {pillar.title}
                 </h3>
