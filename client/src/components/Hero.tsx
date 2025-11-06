@@ -27,9 +27,8 @@ export default function Hero() {
           Trophies aren't on walls — they're on plates.
         </p>
 
-        <p className="font-sans text-lg md:text-xl text-white/80 mb-12 max-w-2xl mx-auto leading-relaxed">
-          Where preservation meets street chaos. Where artistry replaces the
-          burnout of service.
+        <p className="font-display text-2xl md:text-3xl glow-yellow mb-12 max-w-2xl mx-auto">
+          Where preservation meets street chaos
         </p>
 
         <div className="flex flex-wrap gap-4 justify-center mb-16">
