@@ -41,7 +41,7 @@ export default function ThreePillars() {
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="font-display text-5xl md:text-7xl uppercase tracking-wider mb-6">
-            <span className="glow-neon-yellow">Ferment.</span>{" "}
+            <span className="text-white neon-text">Ferment.</span>{" "}
             <span className="glow-neon-yellow">Infuse.</span>{" "}
             <span className="glow-ember">Feast.</span>
           </h2>
