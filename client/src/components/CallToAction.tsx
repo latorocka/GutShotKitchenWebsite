@@ -89,7 +89,7 @@ export default function CallToAction() {
                   <Youtube size={28} />
                 </a>
                 <a
-                  href="https://instagram.com/gutshot"
+                  href="https://instagram.com/gutshot_kitchen"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white/70 hover:glow-yellow transition-all duration-300 p-2 rounded-md"
