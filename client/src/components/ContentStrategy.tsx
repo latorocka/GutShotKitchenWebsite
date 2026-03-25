@@ -32,20 +32,10 @@ export default function ContentStrategy() {
   ];
 
   const upcomingEvents = [
-    {
-      date: "Dec 15-17",
-      location: "Downtown Night Market",
-      city: "Portland, OR",
-    },
-    {
-      date: "Jan 8-9",
-      location: "Street Food Festival",
-      city: "Seattle, WA",
-    },
-    {
-      date: "Jan 22-23",
-      location: "Urban Food Hall",
-      city: "San Francisco, CA",
+   {
+      date: "Coming Soon",
+      location: "TBA",
+      city: "TBA",
     },
   ];
 
