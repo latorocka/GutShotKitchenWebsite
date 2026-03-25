@@ -80,11 +80,11 @@ export default function Footer() {
               For collaborations and inquiries
             </p>
             <a
-              href="mailto:hello@gutshot.com"
+              href="mailto:gutshotkitchen@gmail.com"
               className="text-sm text-primary hover:glow-ember transition-all"
               data-testid="link-email"
             >
-              hello@gutshot.com
+              gutshotkitchen@gmail.com
             </a>
           </div>
         </div>
