@@ -79,7 +79,7 @@ export default function CallToAction() {
               </p>
               <div className="flex gap-4">
                 <a
-                  href="https://youtube.com/@gutshot"
+                  href="https://www.youtube.com/@GutShot_Kitchen"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white/70 hover:glow-ember transition-all duration-300 p-2 rounded-md"
