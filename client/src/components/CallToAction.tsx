@@ -115,20 +115,17 @@ export default function CallToAction() {
           <Card className="bg-black/50 backdrop-blur-sm p-8 border-2 border-white/10" style={{
             boxShadow: '0 8px 32px hsl(0 0% 0% / 0.5)'
           }}>
-            <div className="aspect-video bg-black/40 rounded-md flex items-center justify-center mb-4 border border-white/5">
-              <div className="text-center">
-                <Youtube size={64} className="mx-auto mb-4 text-primary opacity-80" />
-                <p className="font-display text-xl uppercase tracking-wide text-white/70">
-                  Channel Preview
-                </p>
-                <p className="text-sm text-white/50 mt-2">
-                  Coming Soon
-                </p>
-              </div>
+              <div className="aspect-video rounded-md overflow-hidden mb-4">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/3A-lMHNSFeI"
+                title="GutShot Channel Preview"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
             </div>
-            <p className="text-sm text-center text-white/60">
-              Subscribe to witness the craft before it's plated for the world
-            </p>
           </Card>
         </div>
       </div>
