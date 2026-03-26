@@ -115,7 +115,7 @@ export default function ContentStrategy() {
               {menuItems.map((item, index) => (
                 <Card
                   key={index}
-                  className="p-6 bg-black/40 backdrop-blur-sm border-2 border-white/10"
+                  className="p-6 bg-black/40 backdrop-blur-sm border-2 border-white/10 hover:border-accent/50"
                   data-testid={`card-menu-${index}`}
                   style={{
                     boxShadow: '0 4px 20px hsl(0 0% 0% / 0.4)'
