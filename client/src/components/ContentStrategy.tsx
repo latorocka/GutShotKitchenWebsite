@@ -1,11 +1,77 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Calendar, MapPin, Flame } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
+import { Calendar, MapPin, Flame, CalendarPlus, ChevronDown } from "lucide-react";
+import { useState, useEffect } from "react";
 import streetFoodImage from "@assets/generated_images/Street_food_cooking_fire_b7e6ecd5.png";
 
+const EVENT_START = "20251201T180000Z";
+const EVENT_END   = "20251201T220000Z";
+const EVENT_TITLE = "GutShot Pop-Up Event";
+const EVENT_DESC  = "GutShot Kitchen pop-up event. Trophy dishes, preservation techniques, Southeast Asian street food culture.";
+
+function getGoogleCalendarUrl(city: string) {
+  const params = new URLSearchParams({
+    action: "TEMPLATE",
+    text: EVENT_TITLE,
+    dates: `${EVENT_START}/${EVENT_END}`,
+    details: EVENT_DESC,
+    location: city,
+  });
+  return `https://calendar.google.com/calendar/render?${params}`;
+}
+
+function getOutlookUrl(city: string) {
+  const params = new URLSearchParams({
+    subject: EVENT_TITLE,
+    startdt: "2025-12-01T18:00:00Z",
+    enddt: "2025-12-01T22:00:00Z",
+    body: EVENT_DESC,
+    location: city,
+  });
+  return `https://outlook.live.com/calendar/0/action/compose?${params}`;
+}
+
+function downloadIcs(city: string) {
+  const icsContent = [
+    "BEGIN:VCALENDAR",
+    "VERSION:2.0",
+    "PRODID:-//GutShot Kitchen//EN",
+    "BEGIN:VEVENT",
+    `SUMMARY:${EVENT_TITLE}`,
+    `DESCRIPTION:${EVENT_DESC}`,
+    `LOCATION:${city}`,
+    `DTSTART:${EVENT_START}`,
+    `DTEND:${EVENT_END}`,
+    "STATUS:TENTATIVE",
+    "BEGIN:VALARM",
+    "TRIGGER:-P1D",
+    "ACTION:DISPLAY",
+    "DESCRIPTION:GutShot Pop-Up Event tomorrow!",
+    "END:VALARM",
+    "END:VEVENT",
+    "END:VCALENDAR",
+  ].join("\r\n");
+  const blob = new Blob([icsContent], { type: "text/calendar;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = "gutshot-popup-event.ics";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  URL.revokeObjectURL(url);
+}
+
 export default function ContentStrategy() {
-  const { toast } = useToast();
+  const [openDropdown, setOpenDropdown] = useState<number | null>(null);
+
+  useEffect(() => {
+    if (openDropdown === null) return;
+    const close = () => setOpenDropdown(null);
+    document.addEventListener("click", close);
+    return () => document.removeEventListener("click", close);
+  }, [openDropdown]);
+
   const menuItems = [
     {
       name: "Fire & Ferment Street Noodles",
@@ -32,7 +98,7 @@ export default function ContentStrategy() {
   ];
 
   const upcomingEvents = [
-   {
+    {
       date: "Coming Soon",
       location: "TBA",
       city: "TBA",
@@ -67,7 +133,7 @@ export default function ContentStrategy() {
             </h3>
             <div className="space-y-4">
               {upcomingEvents.map((event, index) => (
-        <Card
+                <Card
                   key={index}
                   className="p-6 transition-all duration-300 bg-black/40 backdrop-blur-sm border-2 border-white/10 hover:border-accent/50"
                   data-testid={`card-event-${index}`}
