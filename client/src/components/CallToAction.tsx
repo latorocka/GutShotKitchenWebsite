@@ -2,6 +2,7 @@ import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Youtube, Instagram, Twitter } from "lucide-react";
+import { FaXTwitter } from "react-icons/fa6";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import neonMarketImage from "@assets/generated_images/Neon_signs_night_market_6f25274b.png";
@@ -98,15 +99,15 @@ export default function CallToAction() {
                 >
                   <Instagram size={28} />
                 </a>
-                <a
-                  href="https://twitter.com/gutshot"
+                 <a
+                  href="https://x.com/GutShot_Kitchen"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white/70 hover:glow-teal transition-all duration-300 p-2 rounded-md"
                   data-testid="button-twitter"
-                  aria-label="Twitter"
+                  aria-label="X"
                 >
-                  <Twitter size={28} />
+                  <FaXTwitter size={28} />
                 </a>
               </div>
             </div>
