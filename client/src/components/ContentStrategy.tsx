@@ -4,34 +4,56 @@ import { Calendar, MapPin, Flame, CalendarPlus, ChevronDown } from "lucide-react
 import { useState, useEffect } from "react";
 import streetFoodImage from "@assets/generated_images/Street_food_cooking_fire_b7e6ecd5.png";
 
-const EVENT_START = "20251201T180000Z";
-const EVENT_END   = "20251201T220000Z";
 const EVENT_TITLE = "GutShot Pop-Up Event";
 const EVENT_DESC  = "GutShot Kitchen pop-up event. Trophy dishes, preservation techniques, Southeast Asian street food culture.";
 
-function getGoogleCalendarUrl(city: string) {
+function parseDateStrings(dateStr: string) {
+  const parts = dateStr.split("/");
+  if (parts.length === 3) {
+    const [month, day, year] = parts;
+    const m = month.padStart(2, "0");
+    const d = day.padStart(2, "0");
+    return {
+      icsStart: `${year}${m}${d}T100000Z`,
+      icsEnd:   `${year}${m}${d}T220000Z`,
+      isoStart: `${year}-${m}-${d}T10:00:00Z`,
+      isoEnd:   `${year}-${m}-${d}T22:00:00Z`,
+    };
+  }
+  return {
+    icsStart: "20260425T100000Z",
+    icsEnd:   "20260425T220000Z",
+    isoStart: "2026-04-25T10:00:00Z",
+    isoEnd:   "2026-04-25T22:00:00Z",
+  };
+}
+
+function getGoogleCalendarUrl(dateStr: string, city: string) {
+  const { icsStart, icsEnd } = parseDateStrings(dateStr);
   const params = new URLSearchParams({
     action: "TEMPLATE",
     text: EVENT_TITLE,
-    dates: `${EVENT_START}/${EVENT_END}`,
+    dates: `${icsStart}/${icsEnd}`,
     details: EVENT_DESC,
     location: city,
   });
   return `https://calendar.google.com/calendar/render?${params}`;
 }
 
-function getOutlookUrl(city: string) {
+function getOutlookUrl(dateStr: string, city: string) {
+  const { isoStart, isoEnd } = parseDateStrings(dateStr);
   const params = new URLSearchParams({
     subject: EVENT_TITLE,
-    startdt: "2025-12-01T18:00:00Z",
-    enddt: "2025-12-01T22:00:00Z",
+    startdt: isoStart,
+    enddt: isoEnd,
     body: EVENT_DESC,
     location: city,
   });
   return `https://outlook.live.com/calendar/0/action/compose?${params}`;
 }
 
-function downloadIcs(city: string) {
+function downloadIcs(dateStr: string, city: string) {
+  const { icsStart, icsEnd } = parseDateStrings(dateStr);
   const icsContent = [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
@@ -40,8 +62,8 @@ function downloadIcs(city: string) {
     `SUMMARY:${EVENT_TITLE}`,
     `DESCRIPTION:${EVENT_DESC}`,
     `LOCATION:${city}`,
-    `DTSTART:${EVENT_START}`,
-    `DTEND:${EVENT_END}`,
+    `DTSTART:${icsStart}`,
+    `DTEND:${icsEnd}`,
     "STATUS:TENTATIVE",
     "BEGIN:VALARM",
     "TRIGGER:-P1D",
@@ -99,7 +121,7 @@ export default function ContentStrategy() {
 
   const upcomingEvents = [
     {
-      date: "Coming Soon",
+      date: "4/25/2026",
       location: "TBA",
       city: "TBA",
     },
@@ -167,7 +189,7 @@ export default function ContentStrategy() {
                       {openDropdown === index && (
                         <div className="absolute right-0 mt-2 w-48 bg-black/90 border border-white/20 rounded-md shadow-xl z-50 overflow-hidden">
                           <a
-                            href={getGoogleCalendarUrl(event.city)}
+                            href={getGoogleCalendarUrl(event.date, event.city)}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center gap-2 px-4 py-3 text-sm text-white/80 hover:bg-white/10 transition-colors"
@@ -176,7 +198,7 @@ export default function ContentStrategy() {
                             Google Calendar
                           </a>
                           <a
-                            href={getOutlookUrl(event.city)}
+                            href={getOutlookUrl(event.date, event.city)}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center gap-2 px-4 py-3 text-sm text-white/80 hover:bg-white/10 transition-colors border-t border-white/10"
@@ -186,7 +208,7 @@ export default function ContentStrategy() {
                           </a>
                           <button
                             className="w-full flex items-center gap-2 px-4 py-3 text-sm text-white/80 hover:bg-white/10 transition-colors border-t border-white/10"
-                            onClick={() => { downloadIcs(event.city); setOpenDropdown(null); }}
+                            onClick={() => { downloadIcs(event.date, event.city); setOpenDropdown(null); }}
                           >
                             Apple Calendar
                           </button>
