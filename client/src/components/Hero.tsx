@@ -39,8 +39,8 @@ export default function Hero() {
             }}
             data-testid="button-watch"
             onClick={() => {
-              const ctaSection = document.querySelector('[data-testid="section-cta"]');
-              ctaSection?.scrollIntoView({ behavior: 'smooth' });
+              const popUpSection = document.querySelector('[data-testid="section-content-strategy"]');
+              popUpSection?.scrollIntoView({ behavior: 'smooth' });
             }}
           >
             Watch the Fire
@@ -52,9 +52,8 @@ export default function Hero() {
             }}
             data-testid="button-join"
             onClick={() => {
-              const emailInput = document.querySelector('[data-testid="input-email"]') as HTMLInputElement;
-              emailInput?.focus();
-              emailInput?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              const ctaSection = document.querySelector('[data-testid="section-cta"]');
+              ctaSection?.scrollIntoView({ behavior: 'smooth' });
             }}
           >
             Join the Hunt
