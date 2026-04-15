@@ -1,35 +1,12 @@
 import { Card } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Youtube, Instagram, Twitter } from "lucide-react";
+import { Youtube, Instagram } from "lucide-react";
 import { FaXTwitter } from "react-icons/fa6";
-import { useState } from "react";
-import { useToast } from "@/hooks/use-toast";
 import neonMarketImage from "@assets/generated_images/Neon_signs_night_market_6f25274b.png";
 
+const BEEHIIV_URL = "https://gutshot-kitchen-newsletter.beehiiv.com/";
+
 export default function CallToAction() {
-  const [email, setEmail] = useState("");
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const { toast } = useToast();
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email) return;
-
-    setIsSubmitting(true);
-    
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    toast({
-      title: "Welcome to the hunt! 🔥",
-      description: `We'll send trophy dishes and preservation guides to ${email}`,
-    });
-    
-    setEmail("");
-    setIsSubmitting(false);
-  };
-
   return (
     <section className="relative py-20 md:py-32 px-6 overflow-hidden" data-testid="section-cta">
       <div className="absolute inset-0 bg-gradient-ember"></div>
@@ -51,28 +28,21 @@ export default function CallToAction() {
               too — trophies belong on plates, not walls.
             </p>
 
-            <form onSubmit={handleSubmit} className="mb-8">
-              <div className="flex gap-3">
-                <Input
-                  type="email"
-                  placeholder="your@email.com"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="flex-1"
-                  data-testid="input-email"
-                  required
-                />
+            <div className="mb-8">
+              <a
+                href={BEEHIIV_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="button-subscribe"
+              >
                 <Button
-                  type="submit"
                   variant="default"
-                  className="font-display uppercase tracking-wide"
-                  data-testid="button-subscribe"
-                  disabled={isSubmitting}
+                  className="font-display uppercase tracking-wide text-base px-8"
                 >
-                  {isSubmitting ? "Joining..." : "Subscribe"}
+                  Subscribe to the Newsletter
                 </Button>
-              </div>
-            </form>
+              </a>
+            </div>
 
             <div className="flex gap-6 items-center">
               <p className="text-sm text-white/60 uppercase tracking-wide font-display">
@@ -80,7 +50,7 @@ export default function CallToAction() {
               </p>
               <div className="flex gap-4">
                 <a
-                  href="https://www.youtube.com/@GutShot_Kitchen"
+                  href="https://youtube.com/@gutshot_kitchen"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white/70 hover:glow-ember transition-all duration-300 p-2 rounded-md"
@@ -99,7 +69,7 @@ export default function CallToAction() {
                 >
                   <Instagram size={28} />
                 </a>
-                 <a
+                <a
                   href="https://x.com/GutShot_Kitchen"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -116,7 +86,7 @@ export default function CallToAction() {
           <Card className="bg-black/50 backdrop-blur-sm p-8 border-2 border-white/10" style={{
             boxShadow: '0 8px 32px hsl(0 0% 0% / 0.5)'
           }}>
-              <div className="aspect-video rounded-md overflow-hidden mb-4">
+            <div className="aspect-video rounded-md overflow-hidden mb-4">
               <iframe
                 width="100%"
                 height="100%"
