@@ -114,24 +114,21 @@ export default function Merch() {
         <div className="mt-16 text-center max-w-2xl mx-auto">
           <div className="bg-black/40 border border-white/20 rounded-md p-8">
             <h3 className="font-display text-2xl uppercase tracking-wide glow-yellow mb-4">
-              Get Notified
+              Visit the Store
             </h3>
             <p className="text-white/70 mb-6">
-              Be the first to know when the merch drop goes live. Join the waitlist.
+              Wear the hunt. Gear for those who cook with fire.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="px-4 py-3 bg-black/60 border border-white/20 rounded-md text-white placeholder-white/40 focus:outline-none focus:border-primary/50 flex-1 max-w-md"
-                data-testid="input-merch-email"
-              />
-              <button
-                className="px-8 py-3 bg-primary/20 border border-primary/40 rounded-md font-display uppercase tracking-wide text-primary hover-elevate active-elevate-2 transition-all"
+            <div className="flex justify-center">
+              <a
+                href="https://gutshotkitchen.myshopify.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 data-testid="button-notify-me"
+                className="px-8 py-3 bg-primary/20 border border-primary/40 rounded-md font-display uppercase tracking-wide text-primary hover-elevate active-elevate-2 transition-all"
               >
-                Notify Me
-              </button>
+                Shop Now
+              </a>
             </div>
           </div>
         </div>
