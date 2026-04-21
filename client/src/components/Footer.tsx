@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="relative py-16 px-6 border-t border-white/10 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-dark"></div>
       <div className="absolute inset-0 lantern-glow opacity-30"></div>
-      
+
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           <div>
@@ -15,14 +15,15 @@ export default function Footer() {
               alt="GutShot"
               className="w-32 opacity-70 hover:opacity-100 transition-all duration-300"
               style={{
-                filter: 'none',
-                transition: 'all 0.3s ease'
+                filter: "none",
+                transition: "all 0.3s ease",
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.filter = 'drop-shadow(0 0 8px hsl(210 100% 60%)) drop-shadow(0 0 16px hsl(210 100% 60%))';
+                e.currentTarget.style.filter =
+                  "drop-shadow(0 0 8px hsl(210 100% 60%)) drop-shadow(0 0 16px hsl(210 100% 60%))";
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.filter = 'none';
+                e.currentTarget.style.filter = "none";
               }}
               data-testid="img-footer-logo"
             />
@@ -36,10 +37,12 @@ export default function Footer() {
               <li>
                 <button
                   onClick={() => {
-                    const section = document.querySelector('[data-testid="section-brand-story"]');
-                    section?.scrollIntoView({ behavior: 'smooth' });
+                    const section = document.querySelector(
+                      '[data-testid="section-brand-story"]',
+                    );
+                    section?.scrollIntoView({ behavior: "smooth" });
                   }}
-                  className="text-sm text-white/60 hover:glow-ember transition-all text-left"
+                  className="text-sm text-white/60 hover:glow-teal transition-all text-left"
                   data-testid="link-mission"
                 >
                   Mission
@@ -48,10 +51,12 @@ export default function Footer() {
               <li>
                 <button
                   onClick={() => {
-                    const section = document.querySelector('[data-testid="section-content-strategy"]');
-                    section?.scrollIntoView({ behavior: 'smooth' });
+                    const section = document.querySelector(
+                      '[data-testid="section-content-strategy"]',
+                    );
+                    section?.scrollIntoView({ behavior: "smooth" });
                   }}
-                  className="text-sm text-white/60 hover:glow-ember transition-all text-left"
+                  className="text-sm text-white/60 hover:glow-yellow transition-all text-left"
                   data-testid="link-content"
                 >
                   Pop-Up Events
@@ -60,8 +65,10 @@ export default function Footer() {
               <li>
                 <button
                   onClick={() => {
-                    const section = document.querySelector('[data-testid="section-merch"]');
-                    section?.scrollIntoView({ behavior: 'smooth' });
+                    const section = document.querySelector(
+                      '[data-testid="section-merch"]',
+                    );
+                    section?.scrollIntoView({ behavior: "smooth" });
                   }}
                   className="text-sm text-white/60 hover:glow-ember transition-all text-left"
                   data-testid="link-merch"
@@ -81,7 +88,7 @@ export default function Footer() {
             </p>
             <a
               href="mailto:gutshotkitchen@gmail.com"
-              className="text-sm text-primary hover:glow-ember transition-all"
+              className="text-sm text-primary hover:glow-white transition-all"
               data-testid="link-email"
             >
               gutshotkitchen@gmail.com
