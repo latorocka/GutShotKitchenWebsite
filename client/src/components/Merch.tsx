@@ -98,7 +98,7 @@ export default function Merch() {
                 <p className="text-sm text-white/60 mb-3">
                   {product.description}
                 </p>
-                <p className="font-display text-2xl glow-teal">
+                <p className="font-display text-2xl glow-ember">
                   {product.price}
                 </p>
               </div>
