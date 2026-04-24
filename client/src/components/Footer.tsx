@@ -3,7 +3,7 @@ import neonPatternImage from "@assets/generated_images/Neon_signs_abstract_patte
 
 export default function Footer() {
   return (
-    <footer className="relative py-16 px-6 border-t border-white/10 overflow-hidden">
+    <footer className="section-blend relative py-16 px-6 border-t border-white/10 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-dark"></div>
       <div className="absolute inset-0 lantern-glow opacity-30"></div>
 
