@@ -3,7 +3,7 @@ import streetFoodImage from "@assets/generated_images/Street_food_cooking_fire_b
 
 export default function BrandStory() {
   return (
-    <section className="relative py-20 md:py-32 px-6 overflow-hidden" data-testid="section-brand-story">
+    <section className="section-blend relative py-20 md:py-32 px-6 overflow-hidden" data-testid="section-brand-story">
       <div className="absolute inset-0 bg-gradient-ember"></div>
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-[0.03]"
