@@ -8,7 +8,7 @@ const BEEHIIV_URL = "https://gutshot-kitchen-newsletter.beehiiv.com/";
 
 export default function CallToAction() {
   return (
-    <section className="relative py-20 md:py-32 px-6 overflow-hidden" data-testid="section-cta">
+    <section className="section-blend relative py-20 md:py-32 px-6 overflow-hidden" data-testid="section-cta">
       <div className="absolute inset-0 bg-gradient-ember"></div>
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-[0.03]"
