@@ -4,7 +4,7 @@ import neonPatternImage from "@assets/generated_images/Neon_signs_abstract_patte
 export default function RevolutionStatement() {
   return (
     <section
-      className="relative py-32 md:py-40 px-6 overflow-hidden"
+      className="section-blend relative py-32 md:py-40 px-6 overflow-hidden"
       data-testid="section-revolution"
     >
       <div className="absolute inset-0 bg-gradient-dark"></div>
