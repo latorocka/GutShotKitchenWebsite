@@ -528,6 +528,30 @@
     background: linear-gradient(135deg, hsl(0 0% 4%) 0%, hsl(180 15% 6%) 50%, hsl(0 0% 4%) 100%);
   }
 
+  .section-blend::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 140px;
+    background: linear-gradient(to bottom, hsl(0 0% 3%), transparent);
+    z-index: 20;
+    pointer-events: none;
+  }
+
+  .section-blend::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 140px;
+    background: linear-gradient(to top, hsl(0 0% 3%), transparent);
+    z-index: 20;
+    pointer-events: none;
+  }
+
   .street-vendor-texture {
     background-image: 
       radial-gradient(circle at 15% 20%, hsl(15 85% 55% / 0.05) 0%, transparent 10%),
