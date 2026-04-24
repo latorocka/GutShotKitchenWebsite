@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
-import fermentImage from "@assets/generated_images/Fermentation_jars_neon_glow_5a0d60b1.png";
-import smokeImage from "@assets/generated_images/Smoking_meat_fire_embers_824861d1.png";
-import infuseImage from "@assets/generated_images/Infused_oils_neon_reflections_0f49d67f.png";
+import fermentImage from "@assets/generated_images/ferment_southeast_asian_street.png";
+import smokeImage from "@assets/generated_images/feast_southeast_asian_street.png";
+import infuseImage from "@assets/generated_images/infuse_southeast_asian_street.png";
 import neonMarketImage from "@assets/generated_images/Neon_signs_night_market_6f25274b.png";
 
 export default function ThreePillars() {
