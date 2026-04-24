@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Youtube, Instagram } from "lucide-react";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaXTwitter, FaTiktok } from "react-icons/fa6";
 import neonMarketImage from "@assets/generated_images/Neon_signs_night_market_6f25274b.png";
 
 const BEEHIIV_URL = "https://gutshot-kitchen-newsletter.beehiiv.com/";
@@ -78,6 +78,16 @@ export default function CallToAction() {
                   aria-label="X"
                 >
                   <FaXTwitter size={28} />
+                </a>
+                <a
+                  href="https://www.tiktok.com/@gutshot_kitchen"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/70 hover:glow-pink transition-all duration-300 p-2 rounded-md"
+                  data-testid="button-tiktok"
+                  aria-label="TikTok"
+                >
+                  <FaTiktok size={28} />
                 </a>
               </div>
             </div>
