@@ -149,7 +149,7 @@ export default function ContentStrategy() {
 
         <div className="grid md:grid-cols-2 gap-12 mb-16">
           <div>
-            <h3 className="font-display text-3xl uppercase tracking-wide glow-ember mb-8 flex items-center gap-3">
+            <h3 className="font-display text-3xl uppercase tracking-wide glow-pink mb-8 flex items-center gap-3">
               <Calendar className="glow-teal" size={32} />
               Upcoming Events
             </h3>
@@ -222,7 +222,7 @@ export default function ContentStrategy() {
           </div>
 
           <div>
-            <h3 className="font-display text-3xl uppercase tracking-wide glow-ember mb-8 flex items-center gap-3">
+            <h3 className="font-display text-3xl uppercase tracking-wide glow-pink mb-8 flex items-center gap-3">
               <Flame className="glow-ember" size={32} />
               Featured Menu
             </h3>
