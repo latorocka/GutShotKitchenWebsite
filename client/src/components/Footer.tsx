@@ -88,7 +88,7 @@ export default function Footer() {
             </p>
             <a
               href="mailto:gutshotkitchen@gmail.com"
-              className="text-sm text-primary hover:glow-white transition-all"
+              className="text-sm text-primary hover:glow-pink transition-all"
               data-testid="link-email"
             >
               gutshotkitchen@gmail.com
