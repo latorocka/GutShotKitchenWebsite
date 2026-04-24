@@ -128,7 +128,7 @@ export default function ContentStrategy() {
   ];
 
   return (
-    <section className="relative py-20 md:py-32 px-6 overflow-hidden" data-testid="section-content-strategy">
+    <section className="section-blend relative py-20 md:py-32 px-6 overflow-hidden" data-testid="section-content-strategy">
       <div className="absolute inset-0 bg-gradient-dark"></div>
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-[0.03]"
