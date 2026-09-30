@@ -93,21 +93,25 @@ export default function CallToAction() {
             </div>
           </div>
 
-          <Card className="bg-black/50 backdrop-blur-sm p-8 border-2 border-white/10" style={{
-            boxShadow: '0 8px 32px hsl(0 0% 0% / 0.5)'
-          }}>
-            <div className="aspect-video rounded-md overflow-hidden mb-4">
-              <iframe
-                width="100%"
-                height="100%"
-                src="https://www.youtube.com/embed/Tst0gbkZyhEA"
-                title="GutShot Channel Preview"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
-            </div>
-          </Card>
+          <Card
+  className="bg-black/50 backdrop-blur-sm p-8 border-2 border-white/10"
+  style={{
+    boxShadow: '0 8px 32px hsl(0 0% 0% / 0.5)'
+  }}
+>
+  <div className="aspect-video rounded-md overflow-hidden mb-4">
+    <iframe
+      width="100%"
+      height="100%"
+      src="https://www.youtube.com/embed/Tst0gbkZyhE"
+      title="GutShot Kitchen Channel Preview"
+      frameBorder="0"
+      referrerPolicy="strict-origin-when-cross-origin"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowFullScreen
+    />
+  </div>
+</Card>
         </div>
       </div>
     </section>
